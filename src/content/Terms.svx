@@ -1,0 +1,19 @@
+<script>
+  import { about } from '@/core/routes';
+</script>
+
+## Terms
+
+Or the lack of them, really.
+
+As I tell you on the [/About]({about}) page, my name is Dan. Let me confess right away: I'm from Russia.
+
+Before you close the tab, because all evil Russians want is to hack into your life, bear with me for a moment.
+
+I'm very unhappy with the image of our country. I haven't contributed to it in any way. But it is a thing I need to work with. So here's our plan:
+
+1. found the company in the EU, as it is the place with the strictest laws on data protection. Most probably, in Estonia — they have rather convenient ways of creating a company online and getting e-residental status;
+2. host every bit of data in the EU;
+3. comply with every requirement from the list on the [/About]({about}) page — there's a lot of them, including complete mandatory end-to-end encryption, putting client code into the open source and so on.
+
+For now we don't have any terms you need to agree with. Once we have a company and a ready product we'll offer you to read and accept the real terms.
