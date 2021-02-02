@@ -28,15 +28,6 @@
   .wrapper {
     position: relative;
     user-select: none;
-
-    &:hover {
-      .text-overlay span {
-        transform: $transform;
-      }
-      .parent {
-        transform: none;
-      }
-    }
   }
 
   .parent {
