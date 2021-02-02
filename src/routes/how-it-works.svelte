@@ -6,8 +6,8 @@
   <span slot="title">Tracking expenses sucks</span>
 
   <p slot="p">
-    Managing finances is <span class="emph boring">SO BORING</span>, but tracking expenses is just
-    <span class="emph worst">THE WORST</span>.
+    Managing finances is <span class="boring">SO BORING</span>, but tracking expenses is just
+    <span class="worst">THE WORST</span>.
   </p>
   <p slot="p">We help you with it:</p>
 
@@ -106,10 +106,6 @@
 
   .last {
     margin-bottom: 4em;
-  }
-
-  .emph {
-    text-emphasis-position: under;
   }
 
   .boring {

@@ -58,22 +58,22 @@
 
   figure {
     position: absolute;
-    top: 40%;
-    bottom: 40%;
-    left: 40%;
-    right: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    filter: blur(1px);
+    filter: blur(3px);
 
     @keyframes fig-anim {
       0% {
-        transform: rotate(var(--start-transform)) scale(5) translateX(var(--translate));
+        transform: rotate(var(--start-transform));
       }
       50% {
-        transform: rotate(var(--end-transform)) scale(5) translateX(var(--translate));
+        transform: rotate(var(--end-transform));
       }
       100% {
-        transform: rotate(var(--start-transform)) scale(5) translateX(var(--translate));
+        transform: rotate(var(--start-transform));
       }
     }
     animation: fig-anim 12s ease-in-out infinite;
@@ -81,26 +81,24 @@
     &.wide {
       --start-transform: 19deg;
       --end-transform: 11deg;
-      --translate: 10%;
 
-      border-radius: 50% 0.2em 0.2em 0.2em;
+      border-radius: 50% 2em 2em 2em;
 
       @include back-gradient(var(--color1), var(--color2), var(--color3));
-      box-shadow: 0 0 0.5em 0.2em var(--color4);
+      box-shadow: 0 0 4em 2em var(--color4);
     }
 
     &.narrow {
       --start-transform: -40deg;
       --end-transform: -49deg;
-      --translate: -10%;
 
       right: 50%;
 
       @include back-gradient(var(--color5), var(--color6), var(--color7));
-      box-shadow: 0 0 0.4em 0.2em var(--color8);
+      box-shadow: 0 0 4em 2em var(--color8);
 
       mix-blend-mode: difference;
-      border-radius: 0.2em;
+      border-radius: 4em;
 
       animation-duration: 7s;
     }
@@ -155,7 +153,7 @@
         var(--color3) 10%,
         var(--color4) 20%,
         var(--color7) 30%,
-        var(--color8) 40%
+        var(--color8) 0
       );
 
       &:hover {
@@ -164,7 +162,7 @@
           var(--color1) 10%,
           var(--color2) 20%,
           var(--color5) 30%,
-          var(--color6) 40%
+          var(--color6) 0
         );
       }
     }
