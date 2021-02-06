@@ -1,12 +1,16 @@
 <script>
-  import { about, pricing, terms, howItWorks } from '@/core/routes';
+  import { about, pricing, terms, howItWorks, forum } from '@/core/routes';
 
   const leftLinks = [
-    [about, 'about'],
-    [pricing, 'pricing'],
-    [howItWorks, 'how it works'],
-    ['https://github.com/safeapps-io', 'open source'],
-  ];
+      [about, 'about'],
+      [pricing, 'pricing'],
+      [howItWorks, 'how it works'],
+      [forum, 'forum'],
+    ],
+    rightLinks = [
+      [terms, 'terms of use'],
+      ['https://github.com/safeapps-io', 'open source'],
+    ];
 </script>
 
 <footer>
@@ -21,9 +25,11 @@
           {/each}
         </div>
         <div class="column is-4">
-          <div>
-            <a href={terms}>terms of use</a>
-          </div>
+          {#each rightLinks as [url, text]}
+            <div>
+              <a href={url}>{text}</a>
+            </div>
+          {/each}
         </div>
       </div>
     </div>
