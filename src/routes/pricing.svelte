@@ -42,9 +42,7 @@
     <li
       use:cssVars={{ ...generateRandomColorsForVars(3), radius: `${randBetween(0.2, 3.5)}em` }}
       class={cls}>
-      <div>
-        {text}
-      </div>
+      {text}
     </li>
   {/each}
 </ul>
@@ -157,6 +155,8 @@
       border-radius: var(--radius);
 
       @include back-gradient(var(--color1), var(--color2), var(--color3));
+
+      text-shadow: 0 0 5px #000000a3;
     }
   }
 </style>
