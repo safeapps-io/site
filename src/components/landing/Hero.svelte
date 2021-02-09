@@ -63,44 +63,25 @@
     left: 0;
     right: 0;
 
-    filter: blur(3px);
-
-    @keyframes fig-anim {
-      0% {
-        transform: rotate(var(--start-transform));
-      }
-      50% {
-        transform: rotate(var(--end-transform));
-      }
-      100% {
-        transform: rotate(var(--start-transform));
-      }
-    }
-    animation: fig-anim 12s ease-in-out infinite;
-
     &.wide {
-      --start-transform: 19deg;
-      --end-transform: 11deg;
-
       border-radius: 50% 2em 2em 2em;
 
       @include back-gradient(var(--color1), var(--color2), var(--color3));
       box-shadow: 0 0 4em 2em var(--color4);
+
+      transform: rotate(8deg);
     }
 
     &.narrow {
-      --start-transform: -40deg;
-      --end-transform: -49deg;
-
       right: 50%;
 
       @include back-gradient(var(--color5), var(--color6), var(--color7));
       box-shadow: 0 0 4em 2em var(--color8);
 
-      mix-blend-mode: difference;
+      mix-blend-mode: hard-light;
       border-radius: 4em;
 
-      animation-duration: 7s;
+      transform: rotate(-40deg);
     }
   }
 
