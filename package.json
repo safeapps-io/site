@@ -1,6 +1,6 @@
 {
   "name": "safeapps-site",
-  "version": "0.0.1",
+  "version": "22.02.2021v1",
   "license": "AGPL-3.0",
   "scripts": {
     "dev": "sapper dev --ext '.svelte .svx'",
