@@ -21,7 +21,7 @@
   <h2>It's free during public beta</h2>
 
   <p>
-    But it will not be once we ship the production product. We expect it to happen in late February
+    But it will not be once we ship the production product. We expect it to happen in late March
     2021.
   </p>
   <p>
