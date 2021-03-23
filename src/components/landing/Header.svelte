@@ -13,7 +13,7 @@
 
     <div class="empty" />
 
-    <a class="app-link" href="https://money.safeapps.io/app" rel="external"
+    <a class="app-link" href="https://money.safeapps.io/" rel="external"
       ><span>Go to app</span><span class="icon"
         ><svg
           viewBox="0 0 11 11"
