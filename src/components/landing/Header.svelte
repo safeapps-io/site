@@ -1,6 +1,5 @@
 <script>
   import Logo from '@/components/Logo.svelte';
-  import Dropdown from '@/components/Dropdown.svelte';
 
   import { pricing, howItWorks } from '@/core/routes';
 </script>
@@ -14,7 +13,7 @@
 
     <div class="empty" />
 
-    <a class="app-link" href="https://money.safeapps.io/app"
+    <a class="app-link" href="https://money.safeapps.io/app" rel="external"
       ><span>Go to app</span><span class="icon"
         ><svg
           viewBox="0 0 11 11"
