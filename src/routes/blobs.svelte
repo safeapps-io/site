@@ -1,5 +1,5 @@
 <script>
-  import Blob from '@/components/Blob.svelte';
+  import Blob from '$components/Blob.svelte';
 </script>
 
 <Blob />

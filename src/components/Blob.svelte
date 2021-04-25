@@ -1,14 +1,14 @@
 <script context="module">
   import { svgPath } from 'blobs/v2';
 
-  import { generateRandomColor } from '@/utils/color';
-  import { randBetween } from '@/utils/random';
+  import { generateRandomColor } from '$utils/color';
+  import { randBetween } from '$utils/random';
 
   const offsets = [0, 20, 70, 100],
     generateGradient = () => {
       const stops: { offset: number; color: string; stopOpacity: number }[] = [];
 
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         stops.push({
           offset: offsets[i]!,
           color: generateRandomColor(),

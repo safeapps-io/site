@@ -1,6 +1,6 @@
 <script>
-  import { generateRandomColorsForVars } from '@/utils/color';
-  import { randBetween } from '@/utils/random';
+  import { generateRandomColorsForVars } from '$utils/color';
+  import { randBetween } from '$utils/random';
   import cssVars from 'svelte-css-vars';
 
   const list = [
@@ -67,7 +67,7 @@
     font-size: 4rem;
 
     .numbers {
-      text-emphasis-position: under;
+      text-emphasis-position: under left;
       text-emphasis: filled rgb(0, 255, 21);
     }
 

@@ -1,7 +1,7 @@
 <script>
-  import Logo from '@/components/Logo.svelte';
+  import Logo from '$components/Logo.svelte';
 
-  import { pricing, howItWorks } from '@/core/routes';
+  import { pricing, howItWorks } from '$core/routes';
 </script>
 
 <nav>
@@ -10,6 +10,7 @@
   <menu>
     <a href={pricing}>Pricing</a>
     <a href={howItWorks}>How it works</a>
+    <a href="/blobs">Blobs</a>
 
     <div class="empty" />
 

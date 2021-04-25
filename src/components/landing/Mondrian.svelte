@@ -1,6 +1,6 @@
 <script>
   import cssVars from 'svelte-css-vars';
-  import { generateRandomColorsForVars } from '@/utils/color';
+  import { generateRandomColorsForVars } from '$utils/color';
 
   const count = Array(22).fill(null);
 

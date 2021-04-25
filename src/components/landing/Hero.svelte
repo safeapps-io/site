@@ -1,9 +1,9 @@
 <script>
-  import screenshot from 'static/img/screenshot.png';
+  import screenshot from '$static/img/screenshot.png';
 
   import cssVars from 'svelte-css-vars';
-  import { generateRandomColorsForVars } from '@/utils/color';
-  import { pricing } from '@/core/routes';
+  import { generateRandomColorsForVars } from '$utils/color';
+  import { pricing } from '$core/routes';
 
   /**
    * 1-3 back figure #1 gradients
@@ -109,7 +109,7 @@
 
     :global(.mark) {
       text-emphasis: filled var(--color1);
-      text-emphasis-position: under;
+      text-emphasis-position: under left;
       font-weight: bold;
     }
   }

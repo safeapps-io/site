@@ -1,5 +1,5 @@
 <script>
-  import { about, pricing, terms, howItWorks, forum } from '@/core/routes';
+  import { about, pricing, terms, howItWorks, forum } from '$core/routes';
 
   const leftLinks = [
       [about, 'about'],

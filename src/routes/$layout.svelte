@@ -1,7 +1,9 @@
 <script>
-  import Footer from '@/components/landing/Footer.svelte';
-  import Header from '@/components/landing/Header.svelte';
-  import Meta from '@/components/Meta.svelte';
+  import '../styles/layouts/_site.scss';
+
+  import Footer from '$components/landing/Footer.svelte';
+  import Header from '$components/landing/Header.svelte';
+  import Meta from '$components/Meta.svelte';
 </script>
 
 <Meta
@@ -16,9 +18,7 @@
   <Footer />
 </div>
 
-<style global lang="scss">
-  @import 'src/styles/layouts/site';
-
+<style lang="scss">
   .container {
     display: flex;
     flex-direction: column;

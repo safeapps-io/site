@@ -2,8 +2,8 @@
   import cssVars from 'svelte-css-vars';
   import { fade } from 'svelte/transition';
 
-  import { generateRandomColorsForVars, hslToRgb } from '@/utils/color';
-  import { randBetween } from '@/utils/random';
+  import { generateRandomColorsForVars, hslToRgb } from '$utils/color';
+  import { randBetween } from '$utils/random';
 
   export let list: string[], posterText: string;
 

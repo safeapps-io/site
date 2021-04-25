@@ -1,5 +1,5 @@
 <script>
-  import Hero from '@/components/landing/Hero.svelte';
+  import Hero from '$components/landing/Hero.svelte';
 </script>
 
 <h1 class="fake-transform">
@@ -28,7 +28,7 @@
     filter: drop-shadow(0 0 2px white);
 
     .secure {
-      text-emphasis-position: under;
+      text-emphasis-position: under left;
       text-emphasis: '🔥';
     }
   }

@@ -1,15 +1,17 @@
 <script>
-  import SingleFeature from '@/components/landing/SingleFeature.svelte';
+  import SingleFeature from '$components/landing/SingleFeature.svelte';
 </script>
 
 <SingleFeature picText="upload">
   <span slot="title">Tracking expenses sucks</span>
 
-  <p slot="p">
-    Managing finances is <span class="boring">SO BORING</span>, but tracking expenses is just
-    <span class="worst">THE WORST</span>.
-  </p>
-  <p slot="p">We help you with it:</p>
+  <svelte:fragment slot="p">
+    <p>
+      Managing finances is <span class="boring">SO BORING</span>, but tracking expenses is just
+      <span class="worst">THE WORST</span>.
+    </p>
+    <p>We help you with it:</p>
+  </svelte:fragment>
 
   <p>upload your banking statement</p>
   <p>edit those transactions that need this</p>
@@ -20,11 +22,13 @@
 
 <SingleFeature picText="balance">
   <span slot="title">Know your net worth</span>
-
-  <p slot="p">
-    You money (hopefully) are spread across multiple assets in a few banks and (crypto?-)currencies.
-  </p>
-  <p slot="p">It's a nightmare to manage and remember. But not with us.</p>
+  <svelte:fragment slot="p">
+    <p>
+      You money (hopefully) are spread across multiple assets in a few banks and
+      (crypto?-)currencies.
+    </p>
+    <p>It's a nightmare to manage and remember. But not with us.</p>
+  </svelte:fragment>
 
   <p>add all your assets</p>
   <p>
@@ -38,9 +42,10 @@
 
 <SingleFeature picText="privacy">
   <span slot="title">Privacy meets features</span>
-
-  <p slot="p">We don't believe in selling data, so we will not do this.</p>
-  <p slot="p">But please don't take our word for it. We have proof:</p>
+  <svelte:fragment slot="p">
+    <p>We don't believe in selling data, so we will not do this.</p>
+    <p>But please don't take our word for it. We have proof:</p>
+  </svelte:fragment>
 
   <p>
     <strong>math guards you.</strong><br />
@@ -59,12 +64,14 @@
 <SingleFeature picText="control">
   <span slot="title">(soon) Loans may attract the sharks</span>
 
-  <p slot="p">We all take loans. They help us progress.</p>
-  <p slot="p">
-    But if you have an active loan, you must be extra careful with your cash flow. This river can go
-    wild and make you a bankrupt.
-  </p>
-  <p slot="p">We help here too:</p>
+  <svelte:fragment slot="p">
+    <p>We all take loans. They help us progress.</p>
+    <p>
+      But if you have an active loan, you must be extra careful with your cash flow. This river can
+      go wild and make you a bankrupt.
+    </p>
+    <p>We help here too:</p>
+  </svelte:fragment>
 
   <p>save all your loans in the app</p>
   <p>get full payment calendar mapped on your net worth to be super-calm about tomorrow</p>
@@ -76,12 +83,13 @@
 <div class="last">
   <SingleFeature picText="control">
     <span slot="title">(soon) You have goals and dreams — but not time </span>
-
-    <p slot="p">In the end we work to live, not the other way around.</p>
-    <p slot="p">
-      And we all have high hopes for the future. Money is not the goal, it a mere building block.
-    </p>
-    <p slot="p">But you still need them, so we help your dreams come true:</p>
+    <svelte:fragment slot="p">
+      <p>In the end we work to live, not the other way around.</p>
+      <p>
+        And we all have high hopes for the future. Money is not the goal, it a mere building block.
+      </p>
+      <p>But you still need them, so we help your dreams come true:</p>
+    </svelte:fragment>
 
     <p>
       <strong>add your goals.</strong><br />
