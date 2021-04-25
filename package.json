@@ -9,7 +9,6 @@
     "build": "find . -name .DS_Store | xargs rm && NODE_ENV=production svelte-kit build"
   },
   "dependencies": {
-    "blobs": "^2.2.0",
     "bulma": "^0.9.1"
   },
   "devDependencies": {

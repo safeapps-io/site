@@ -1,6 +1,5 @@
 <script context="module">
-  import blob from 'blobs/v2/index.js';
-
+  import { svgPath } from '$utils/blobs';
   import { generateRandomColor } from '$utils/color';
   import { randBetween } from '$utils/random';
 
@@ -23,7 +22,7 @@
     },
     generateSize = () => randBetween(300, 450),
     generatePath = (maxSize: number, fillId: string) => ({
-      d: blob.svgPath({
+      d: svgPath({
         seed: Math.random(),
         extraPoints: randBetween(3, 8),
         randomness: randBetween(2, 5),
