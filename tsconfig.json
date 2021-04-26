@@ -37,10 +37,9 @@
     "moduleResolution": "node",
     "target": "es2018",
     "module": "esnext",
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "resolveJsonModule": true,
+    "strict": true,
     "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
     "noEmit": true,
   },
 }
