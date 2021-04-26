@@ -41,7 +41,6 @@
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "noUncheckedIndexedAccess": true,
-    "allowJs": true,
     "noEmit": true,
   },
 }
