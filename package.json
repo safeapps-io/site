@@ -1,6 +1,6 @@
 {
   "name": "safeapps-site",
-  "version": "23.03.2021v2",
+  "version": "27.04.2021v1",
   "license": "AGPL-3.0",
   "type": "module",
   "scripts": {
