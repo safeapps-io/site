@@ -37,9 +37,12 @@
     display: flex;
     flex-wrap: wrap;
 
+    a {
+      padding: 1em;
+    }
+
     li:not(:last-child):after {
       content: '·';
-      margin: 0 1em;
     }
   }
 </style>
