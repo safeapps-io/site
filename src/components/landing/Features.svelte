@@ -6,7 +6,7 @@
   <Feature>
     <svelte:fragment slot="title">End-to-end encryption</svelte:fragment>
     <svelte:fragment slot="decription"
-      >No meaningful data leaves the client in plaintext.</svelte:fragment>
+      >No user data leaves the client in plaintext.</svelte:fragment>
   </Feature>
 
   <Feature>
@@ -34,7 +34,7 @@
   <Feature>
     <svelte:fragment slot="title">Complete anonymity</svelte:fragment>
     <svelte:fragment slot="decription"
-      >Sign up with username, pay with crypto. No phone or email required.</svelte:fragment>
+      >Sign up with a username, pay with crypto. No phone or email is required.</svelte:fragment>
   </Feature>
 </div>
 
