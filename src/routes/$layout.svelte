@@ -1,7 +1,7 @@
 <script>
-  import Footer from '@/components/landing/Footer.svelte';
-  import Header from '@/components/landing/Header.svelte';
-  import Meta from '@/components/Meta.svelte';
+  import Footer from '$components/landing/Footer.svelte';
+  import Header from '$components/landing/Header.svelte';
+  import Meta from '$components/Meta.svelte';
 </script>
 
 <Meta

@@ -1,5 +1,5 @@
 <script>
-  import previewImagePath from 'static/img/preview.png';
+  import previewImagePath from '$static/img/preview.png';
 
   export let title = '',
     description = '',

@@ -1,5 +1,5 @@
 <script>
-  import { horizontalSlide } from '@/utils/horizontalSlide';
+  import { horizontalSlide } from '$utils/horizontalSlide';
 
   let hovered = false;
   const mouseover = () => (hovered = true),
