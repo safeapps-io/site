@@ -1,45 +1,29 @@
 <script>
   import screenshot from '$static/img/screenshot.png';
 
-  import cssVars from 'svelte-css-vars';
-  import { generateRandomColorsForVars } from '$utils/color';
-  import { pricing } from '$core/routes';
-
-  /**
-   * 1-3 back figure #1 gradients
-   * 4 back figure #1 shadow
-   * 5-7 back figure #2 gradients
-   * 8 back figure #2 shadow
-   *
-   * 1-8 button border gradient
-   * 1 text emphasis color
-   */
-  const colors = generateRandomColorsForVars(8);
+  import Cta from '$components/Cta.svelte';
 </script>
 
-<div class="wrapper" use:cssVars={colors}>
+<div class="wrapper">
   <figure class="wide" />
   <figure class="narrow" />
 
   <div class="text fake-transform">
-    <p use:cssVars={{ multiplier: 0 }}>
+    <p style="--multiplier: 0">
       <span class="back">Get out of <span class="mark">debt</span></span>
     </p>
-    <p use:cssVars={{ multiplier: 1 }}>
+    <p style="--multiplier: 1">
       <span class="back">Save more <span class="mark">money</span></span>
     </p>
-    <p use:cssVars={{ multiplier: 2 }}>
+    <p style="--multiplier: 2">
       <span class="back">Plan for <span class="mark">future</span></span>
     </p>
-    <p use:cssVars={{ multiplier: 3 }}>
+    <p style="--multiplier: 3">
       <span class="back">Preserve your <span class="mark">privacy</span></span>
     </p>
 
-    <div class="cta" use:cssVars={{ multiplier: 4 }}>
-      <a href="https://money.safeapps.io/" class="button is-warn is-large">Try for free</a>
-      <p class="below-cta">
-        It's free during public beta.<br />See <a href={pricing}>pricing</a> for details.
-      </p>
+    <div class="cta" style="--multiplier: 4">
+      <Cta />
     </div>
   </div>
 
@@ -87,10 +71,10 @@
 
   .text {
     flex: 2;
-    padding-left: 2em;
 
     @include mq($from: tablet) {
       margin-right: 1em;
+      padding-left: 2em;
     }
     @include mq($until: tablet) {
       text-align: center;
@@ -123,45 +107,6 @@
 
   .cta {
     margin-top: 2em;
-
-    .button {
-      font-weight: bold;
-
-      border-image-slice: 1;
-      border-width: 8px;
-      border-image-source: repeating-linear-gradient(
-        45deg,
-        var(--color3) 10%,
-        var(--color4) 20%,
-        var(--color7) 30%,
-        var(--color8) 0
-      );
-
-      &:hover {
-        border-image-source: repeating-linear-gradient(
-          45deg,
-          var(--color1) 10%,
-          var(--color2) 20%,
-          var(--color5) 30%,
-          var(--color6) 0
-        );
-      }
-    }
-
-    .below-cta {
-      font-size: 80%;
-      color: white;
-      text-shadow: 0 0 4px black;
-
-      a {
-        color: white;
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
   }
 
   .screenshot {

@@ -1,6 +1,4 @@
 <script>
-  import '../styles/layouts/_site.scss';
-
   import Footer from '$components/landing/Footer.svelte';
   import Header from '$components/landing/Header.svelte';
   import Meta from '$components/Meta.svelte';
@@ -18,7 +16,9 @@
   <Footer />
 </div>
 
-<style lang="scss">
+<style global lang="scss">
+  @import 'src/styles/layouts/site';
+
   .container {
     display: flex;
     flex-direction: column;
