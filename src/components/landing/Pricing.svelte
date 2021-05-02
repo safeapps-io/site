@@ -3,7 +3,7 @@
 </script>
 
 <div class="wrapper">
-  <p class="price">$<span class="numbers">49.99</span><span class="duration">/year</span></p>
+  <p class="price">$<span class="numbers">59.99</span><span class="duration">/year</span></p>
   <p class="trial">14 days trial, 30-day money back guarantee</p>
 
   <div class="cta">
