@@ -1,0 +1,10 @@
+## Privacy policy
+
+We're currently working with lawyers to finish this document.
+
+It will be simple. We don't have your personal data — it's all encrypted. We don't store your IP address. You can delete or export your data at any moment, even if your subscription has expired.
+
+The only personal data we share is your email address. We only share it with [SparkPost](https://www.sparkpost.com/) — they help us with sending emails.
+But you don't have to tell us your email address — we allow for username-only signup.
+
+The rules are simple.
