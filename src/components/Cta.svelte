@@ -1,5 +1,4 @@
-<a href="https://money.safeapps.io/" class="button is-warn is-large">Try for free</a>
-<p class="below-cta">No credit card required.</p>
+<a href="https://money.safeapps.io/" class="button is-large">Start right now</a>
 
 <style lang="scss">
   .button {
@@ -24,10 +23,5 @@
         var(--color6) 0
       );
     }
-  }
-
-  $color: rgba(0, 0, 0, 0.5);
-  .below-cta {
-    font-size: 80%;
   }
 </style>

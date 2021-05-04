@@ -1,10 +1,10 @@
 {
   "name": "safeapps-site",
-  "version": "27.04.2021v2",
+  "version": "04.05.2021v1",
   "license": "AGPL-3.0",
   "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "svelte-kit dev --p 3001",
     "type": "tsc --noEmit && svelte-check",
     "build": "rm -rf ./build && find . -name .DS_Store | xargs rm && NODE_ENV=production svelte-kit build"
   },
