@@ -1,16 +1,14 @@
-# About
-
-Hi, I'm Dan, the CEO of SafeApps.
+Hi, I'm Dan, the founder of [safe] apps.
 
 It may be surprising for you, but most probably you've been hacked a bunch of times. [You can check it yourself](https://haveibeenpwned.com/), but if you're not a new kid in the block rest assured some of those pesky IT boys and girls have messed up a few times and lost every bit of data they had on you.
 
-Sometimes it's kind of funny — like when hackers got access to [internet-connected chastity cages](https://www.techdirt.com/articles/20210111/08041046030/internet-connected-chastity-cages-hit-bitcoin-ransom-hack.shtml). Sometimes it's horrifying, like when the [whole Bulgaria's Revenue Office was hacked](https://www.businessinsider.com/hacker-steals-personal-data-every-taxpayer-bulgaria-2019-7). We all know these stories.
+Sometimes it's kind of funny — like when hackers got access to [internet-connected chastity cages](https://www.techdirt.com/articles/20210111/08041046030/internet-connected-chastity-cages-hit-bitcoin-ransom-hack.shtml). Sometimes it's horrifying, like when the [whole Bulgaria's Revenue Office was hacked](https://www.businessinsider.com/hacker-steals-personal-data-every-taxpayer-bulgaria-2019-7). We all know these stories.
 
 It's not the hacks that matter most, it's the fact that companies have so much information about us, and we rarely control what they can do with it.
 
-They use it against us to surge their metrics. They sell the data to whoever offers high enough price. They help others manipulate us.
+They use it against us to surge their metrics. They sell the data to whoever offers a high enough price. They help others manipulate us.
 
-I never liked it. I find centralized SaaS-model superior to what software was before. But users lost so much control over their data we may feel sorry about this transition after all.
+I never liked it. I find the centralized SaaS model superior to what software was before. But users lost so much control over their data we may feel sorry about this transition after all.
 
 ## It shouldn't be like that
 
@@ -22,15 +20,15 @@ It's rather simple. We came up with a simple list of requirements:
 2. **open source the client code**. Everything you do with decrypted data should be inspectable
 3. **no stores**. Stores can mangle with the code, change its signatures. They can have leverage on the company that has traction
 4. **no centralized ads**. Centralized ads = data collection. This is a very tight connection that cannot be broken down
-5. **no behavior trackers**. Since behavior trackers require code running on the client we lose everything once we add 3rd-party scripts to our code base
-6. **allow users to export everything**. Users are not hostages on our platform. Once they want to move out — allow them
-7. **have an open community**. Most of the people on Earth do not know what encryption is. That is fine. This is why you need an open community that will point at your lies or convince newcomers this app is safe.
+5. **no behavior trackers**. Since behavior trackers require code running on the client we lose everything once we add 3rd-party scripts to our codebase
+6. **allow users to export everything**. Users are not hostages on our platform. Once they want to move out — allow them
+7. **have an open community**. Most of the people on Earth do not know what encryption is. That is fine. This is why you need an open community that will point at your lies or convinces newcomers this app is safe.
 
 ## What we do
 
 We're not making a new revolution. We'll not rethink everything. Our apps will not shatter the very foundation of existence.
 
-All we want is apps that respect our data and try very hard to minimize users' risks and communicate them clearly. We comply with all the requirements above and, hopefully, set an example that this is rather simple and beneficial for everybody.
+All we want are apps that respect our data and try very hard to minimize users' risks and communicate them clearly. We comply with all the requirements above and, hopefully, set an example that this is rather simple and beneficial for everybody.
 
 ## Questions?
 

@@ -1,11 +1,12 @@
 <script>
-  import { about, terms, forum, privacy } from '$core/routes';
+  import { about, terms, forum, privacy, cookie } from '$core/routes';
 
   const links = [
     [about, 'about'],
     [forum, 'forum'],
     [terms, 'terms of service'],
     [privacy, 'privacy policy'],
+    [cookie, 'cookie policy'],
     ['https://github.com/safeapps-io', 'github'],
   ];
 </script>
