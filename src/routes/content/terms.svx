@@ -1,15 +1,35 @@
-## Terms of service
-
-We're currently working with lawyers to finish this document.
-
-But it will be simple. We came up with a simple list of requirements:
-
-1. **encrypt everything on the client-side**. No sensitive data should leave the device, ever;
-2. **open source the client code**. Everything you do with decrypted data should be inspectable;
-3. **no stores**. Stores can mangle with the code, change its signatures. They can have leverage on the company that has traction;
-4. **no centralized ads**. Centralized ads = data collection. This is a very tight connection that cannot be broken down;
-5. **no behavior trackers**. Since behavior trackers require code running on the client we lose everything once we add 3rd-party scripts to our codebase;
-6. **allow users to export everything**. Users are not hostages on our platform. Once they want to move out — allow them;
-7. **have an open community**. Most of the people on Earth do not know what encryption is. That is fine. This is why you need an open community that will point at your lies or convinces newcomers this app is safe.
-
-This is what we will promise you with a very intricate language of lawyers.
+<h2>Terms of Service</h2>
+<p>These Terms of Service govern your use of the website located at <a href="https://safeapps.io/">https://safeapps.io/</a> and all of the subdomains and any related services provided by IP Kozlov Daniil Victorovich. </p>
+<p>By accessing <a href="https://safeapps.io/">https://safeapps.io/</a> or any of the subdomains, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations. If you do not agree with these Terms of Service, you are prohibited from using or accessing this website or using any other services provided by IP Kozlov Daniil Victorovich. </p>
+<p>We, IP Kozlov Daniil Victorovich, reserve the right to review and amend any of these Terms of Service at our sole discretion. Upon doing so, we will update this page. Any changes to these Terms of Service will take effect immediately from the date of publication. </p>
+<p>These Terms of Service were last updated on 6 May 2021. </p>
+<h3>Limitations of Use</h3>
+<p>By using this website, you warrant on behalf of yourself, your users, and other parties you represent that you will not: </p>
+<ol>
+   <li>modify, copy, prepare derivative works of any materials and software contained on this website;</li>
+   <li>remove any copyright or other proprietary notations from any materials and software on this website;</li>
+   <li>knowingly or negligently use this website or any of its associated services in a way that abuses or disrupts our networks or any other service IP Kozlov Daniil Victorovich provides;</li>
+   <li>use this website or its associated services to transmit or publish any harassing, indecent, obscene, fraudulent, or unlawful material;</li>
+   <li>use this website or its associated services in violation of any applicable laws or regulations;</li>
+   <li>use this website in conjunction with sending unauthorized advertising or spam;</li>
+   <li>harvest, collect, or gather user data without the user’s consent; or</li>
+   <li>use this website or its associated services in such a way that may infringe the privacy, intellectual property rights, or other rights of third parties.</li>
+</ol>
+<h3>Intellectual Property</h3>
+<p>The intellectual property in the materials contained in this website are owned by or licensed to IP Kozlov Daniil Victorovich and are protected by applicable copyright and trademark law. We grant our users permission to download one copy of the materials for personal, non-commercial transitory use. </p>
+<p>This constitutes the grant of a license, not a transfer of title. This license shall automatically terminate if you violate any of these restrictions or the Terms of Service, and may be terminated by IP Kozlov Daniil Victorovich at any time. </p>
+<h3>Liability</h3>
+<p>Our website and the materials on our website are provided on an 'as is' basis. To the extent permitted by law, IP Kozlov Daniil Victorovich makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property, or other violation of rights. </p>
+<p>In no event shall IP Kozlov Daniil Victorovich or its suppliers be liable for any consequential loss suffered or incurred by you or any third party arising from the use or inability to use this website or the materials on this website, even if IP Kozlov Daniil Victorovich or an authorized representative has been notified, orally or in writing, of the possibility of such damage. </p>
+<p>In the context of this agreement, &ldquo;consequential loss&rdquo; includes any consequential loss, indirect loss, real or anticipated loss of profit, loss of benefit, loss of revenue, loss of business, loss of goodwill, loss of opportunity, loss of savings, loss of reputation, loss of use and/or loss or corruption of data, whether under statute, contract, equity, tort (including negligence), indemnity, or otherwise. </p>
+<p>Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you. </p>
+<h3>Accuracy of Materials</h3>
+<p>The materials appearing on our website are not comprehensive and are for general information purposes only. IP Kozlov Daniil Victorovich does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on this website, or otherwise relating to such materials or on any resources linked to this website. </p>
+<h3>Links</h3>
+<p>IP Kozlov Daniil Victorovich has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement, approval, or control by IP Kozlov Daniil Victorovich of the site. Use of any such linked site is at your own risk and we strongly advise you make your own investigations with respect to the suitability of those sites. </p>
+<h3>Right to Terminate</h3>
+<p>We may suspend or terminate your right to use our website and terminate these Terms of Service immediately upon written notice to you for any breach of these Terms of Service. </p>
+<h3>Severance</h3>
+<p>Any term of these Terms of Service which is wholly or partially void or unenforceable is severed to the extent that it is void or unenforceable. The validity of the remainder of these Terms of Service is not affected. </p>
+<h3>Governing Law</h3>
+<p>These Terms of Service are governed by and construed in accordance with the laws of Russia. You irrevocably submit to the exclusive jurisdiction of the courts in that State or location. </p>
