@@ -49,7 +49,9 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
-                            modules: true
+                            modules: {
+                                localIdentName: '[local:2]-[hash:base64:4]'
+                            }
                         }
                     },
                     "postcss-loader",
