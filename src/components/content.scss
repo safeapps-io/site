@@ -1,0 +1,40 @@
+.h1,
+.h2 {
+  font-weight: bold;
+  text-align: center;
+
+  margin: 2em 0 3em;
+  @include mq($until: tablet) {
+    margin: 1em 0 2em;
+  }
+}
+
+.h1 {
+  composes: fake-transform from global;
+  font-size: 3rem;
+
+  // Otherwise gradient backs overlay it
+  z-index: 2;
+
+  filter: drop-shadow(0 0 2px white);
+
+  .secure {
+    text-emphasis-position: under left;
+    text-emphasis: '🔥';
+  }
+}
+
+.h2 {
+  font-size: 2.5rem;
+}
+
+.hero {
+  @include mq($until: tablet) {
+    margin-bottom: 5em;
+  }
+  margin-bottom: 15em;
+}
+
+.small-feat {
+  margin-top: 2em;
+}

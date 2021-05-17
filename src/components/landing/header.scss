@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    place-items: baseline;
+
+    @include mq($until: tablet) {
+        place-items: center;
+
+        .empty {
+            display: none;
+        }
+    }
+
+    margin-top: 5em;
+
+    & * {
+        flex: 1;
+    }
+}
+
+.app-link {
+    font-size: 90%;
+    text-transform: uppercase;
+    text-align: right;
+}

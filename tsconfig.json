@@ -1,45 +1,35 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": [
-    "src/**/*.d.ts",
-    "src/**/*.js",
-    "src/**/*.ts",
-    "src/**/*.svelte"
-  ],
-  "exclude": [
-    "node_modules/*",
-    "static/*",
-  ],
   "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2017",
+    "isolatedModules": true,
+    "types": ["./src/@types/static.d.ts"],
     "lib": [
       "DOM",
-      "ES2020",
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "ES2020"
     ],
-    "baseUrl": ".",
-    "paths": {
-      "$app/*": [
-        ".svelte/dev/runtime/app/*",
-        ".svelte/build/runtime/app/*"
-      ],
-      "$components/*": [
-        "src/components/*"
-      ],
-      "$core/*": [
-        "src/core/*"
-      ],
-      "$utils/*": [
-        "src/utils/*"
-      ],
-      "$static/*": [
-        "src/static/static"
-      ]
-    },
-    "moduleResolution": "node",
-    "target": "es2018",
     "module": "esnext",
     "strict": true,
-    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
     "resolveJsonModule": true,
-    "noEmit": true,
+    "importHelpers": true,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "jsx": "react-jsx"
   },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
 }

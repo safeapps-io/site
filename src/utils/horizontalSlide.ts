@@ -1,11 +1,12 @@
-import type { TransitionConfig } from 'svelte/transition';
-
-import { cubicOut } from 'svelte/easing';
+function cubicOut(t: number) {
+    const f = t - 1.0;
+    return f * f * f + 1.0;
+}
 
 export function horizontalSlide(
   node: Element,
   { duration = 500, delay = 0 }: { duration?: number; delay?: number },
-): TransitionConfig {
+) {
   const style = getComputedStyle(node),
     opacity = +style.opacity + 1,
     width = parseFloat(style.width),
@@ -20,7 +21,7 @@ export function horizontalSlide(
     delay,
     easing: cubicOut,
     duration,
-    css: t => {
+    css: (t: number) => {
       const forcedSlide = Math.min(t * 2, 1);
 
       return (

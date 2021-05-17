@@ -1,1 +1,1 @@
-export { default as Feature } from './Whole.svelte';
+export { default as Feature } from './whole';

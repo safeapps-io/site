@@ -1,0 +1,97 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  place-items: center;
+}
+
+.figure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wide {
+  composes: figure;
+  border-radius: 50% 2em 2em 2em;
+
+  @include back-gradient(var(--color1), var(--color2), var(--color3));
+  box-shadow: 0 0 4em 2em var(--color4);
+
+  transform: rotate(8deg);
+}
+
+.narrow {
+  composes: figure;
+  right: 50%;
+
+  @include back-gradient(var(--color5), var(--color6), var(--color7));
+  box-shadow: 0 0 4em 2em var(--color8);
+
+  mix-blend-mode: hard-light;
+  border-radius: 4em;
+
+  transform: rotate(-40deg);
+}
+
+.text {
+  composes: fake-transform from global;
+  flex: 2;
+
+  @include mq($from: tablet) {
+    margin-right: 1em;
+    padding-left: 2em;
+  }
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+
+  > p {
+    font-size: 1.4rem;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+
+    .back {
+      box-shadow: 0px 0px 0px 10px hsl(0, 0%, 98%);
+      background: hsl(0, 0%, 98%);
+    }
+  }
+
+  :global(.mark) {
+    text-emphasis: filled var(--color1);
+    text-emphasis-position: under left;
+    font-weight: bold;
+  }
+}
+
+.text > p,
+.cta {
+  @include mq($from: tablet) {
+    padding-left: calc(var(--multiplier) * 20px);
+  }
+}
+
+.cta {
+  margin-top: 2em;
+
+  p {
+    font-size: 80%;
+  }
+}
+
+.screenshot {
+  @include mq($until: tablet) {
+    display: none;
+  }
+
+  flex: 4;
+
+  img {
+    min-width: 540px;
+    border-radius: 1em;
+
+    filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.5));
+  }
+}

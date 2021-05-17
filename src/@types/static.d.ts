@@ -28,7 +28,7 @@ declare module '*.webp' {
   export = value;
 }
 
-declare module '*.svx' {
-  const value: SvelteComponent;
-  export = value;
+declare module '*.scss' {
+  const value: Record<string, string>;
+  export default value;
 }

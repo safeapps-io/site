@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  place-content: center;
+  justify-content: center;
+
+  font-size: 1.5em;
+  text-align: center;
+  color: $turquoise;
+
+  user-select: none;
+}
+
+.bracket {
+  font-weight: bold;
+}
+
+.safe {
+  overflow: hidden;
+}
+
+.money {
+  margin-left: 0.4em;
+}

@@ -1,0 +1,28 @@
+.footer {
+  padding-bottom: 2em;
+}
+
+.copy {
+  composes: column from global;
+  composes: is-3 from global;
+
+  // .columns is just display:block on mobile devices, so we move the copy up by
+  // setting negative order when .columns is flex — on desktops
+  order: -1;
+}
+
+.ul {
+  composes: column from global;
+  composes: is-9 from global;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    padding: 1em;
+  }
+
+  li:not(:last-child):after {
+    content: '·';
+  }
+}
