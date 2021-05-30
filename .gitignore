@@ -123,3 +123,6 @@ build/
 .env.*
 
 # .vscode/
+
+# Avoid storing huge size videos in VCS
+*.mp4
