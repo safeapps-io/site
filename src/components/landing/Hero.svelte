@@ -1,7 +1,16 @@
 <script>
   import screenshot from '$static/img/screenshot.png';
+  import demoVideo from '$static/video/demo.mp4';
 
   import Cta from '$components/Cta.svelte';
+  import HoverRotation from '$components/HoverRotation.svelte';
+
+  let isVideoStarted = false,
+    videoEl: HTMLVideoElement;
+  const launchVideo = () => {
+    isVideoStarted = true;
+    videoEl.play();
+  };
 </script>
 
 <div class="wrapper">
@@ -28,9 +37,35 @@
     </div>
   </div>
 
-  <div class="screenshot fake-transform">
-    <img src={screenshot} alt="App screenshot" height="998" width="1384" />
-  </div>
+  <HoverRotation className="video fake-transform" play={!isVideoStarted}>
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <video
+      poster={screenshot}
+      controls={isVideoStarted}
+      width="1080"
+      height="1920"
+      bind:this={videoEl}>
+      <source src={demoVideo} type="video/mp4" />
+    </video>
+
+    {#if !isVideoStarted}
+      <div class="overlay" on:click={launchVideo}>
+        <!-- © https://teenyicons.com/ play-circle (solid) -->
+      </div>
+      <svg
+        viewBox="0 0 15 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="90"
+        height="90"
+        on:click={launchVideo}
+        ><path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zm6.249-2.432a.5.5 0 01.5-.002l3.5 2a.5.5 0 010 .868l-3.5 2A.5.5 0 016 9.5v-4a.5.5 0 01.249-.432z"
+          fill="currentColor" /></svg>
+    {/if}
+  </HoverRotation>
 </div>
 
 <style lang="scss">
@@ -114,15 +149,43 @@
     }
   }
 
-  .screenshot {
+  :global(.video) {
     @include mq($until: tablet) {
       display: none;
     }
 
     flex: 4;
+    cursor: pointer;
 
-    img {
-      min-width: 540px;
+    perspective: 40px;
+    transition: transform 0.5s;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      transition: color 0.3s, filter 0.3s;
+
+      color: var(--color1);
+      filter: drop-shadow(3px 3px 1px var(--color2));
+    }
+
+    &:hover svg {
+      color: var(--color3);
+      filter: drop-shadow(3px 3px 1px var(--color4));
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    video {
       border-radius: 1em;
 
       filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.5));
