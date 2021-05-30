@@ -1,6 +1,5 @@
 <script>
   import screenshot from '$static/img/screenshot.png';
-  import demoVideo from '$static/video/demo.mp4';
 
   import Cta from '$components/Cta.svelte';
   import HoverRotation from '$components/HoverRotation.svelte';
@@ -45,7 +44,7 @@
       width="1080"
       height="1920"
       bind:this={videoEl}>
-      <source src={demoVideo} type="video/mp4" />
+      <source src="https://safeapps.io/static/video/demo.490d3316.mp4" type="video/mp4" />
     </video>
 
     {#if !isVideoStarted}
