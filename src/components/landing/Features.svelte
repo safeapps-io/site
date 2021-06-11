@@ -34,7 +34,7 @@
   <Feature>
     <svelte:fragment slot="title">Complete anonymity</svelte:fragment>
     <svelte:fragment slot="decription"
-      >Sign up with a username, pay with crypto. No phone or email is required.</svelte:fragment>
+      >Sign up with a username. No phone or email is required.</svelte:fragment>
   </Feature>
 </div>
 
