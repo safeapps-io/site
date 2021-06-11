@@ -18,15 +18,12 @@
 
   <div class="text fake-transform">
     <p style="--multiplier: 0">
-      <span class="back">Get out of <span class="mark">debt</span></span>
-    </p>
-    <p style="--multiplier: 1">
       <span class="back">Save more <span class="mark">money</span></span>
     </p>
-    <p style="--multiplier: 2">
+    <p style="--multiplier: 1">
       <span class="back">Plan for <span class="mark">future</span></span>
     </p>
-    <p style="--multiplier: 3">
+    <p style="--multiplier: 2">
       <span class="back">Preserve your <span class="mark">privacy</span></span>
     </p>
 
@@ -154,40 +151,38 @@
     }
 
     flex: 4;
-    cursor: pointer;
-
-    perspective: 40px;
-    transition: transform 0.5s;
-
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      transition: color 0.3s, filter 0.3s;
-
-      color: var(--color1);
-      filter: drop-shadow(3px 3px 1px var(--color2));
-    }
 
     &:hover svg {
       color: var(--color3);
       filter: drop-shadow(3px 3px 1px var(--color4));
     }
+  }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    video {
-      border-radius: 1em;
+    transition: color 0.3s, filter 0.3s;
 
-      filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.5));
-    }
+    color: var(--color1);
+    filter: drop-shadow(3px 3px 1px var(--color2));
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    cursor: pointer;
+  }
+
+  video {
+    border-radius: 1em;
+
+    filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 0.5));
   }
 </style>
