@@ -1,0 +1,14 @@
+mark {
+  padding: 1px 3px;
+  font-weight: bold;
+
+  &.red {
+    background-color: $red;
+  }
+  &.blue {
+    background-color: $blue;
+  }
+  &.green {
+    background-color: $green;
+  }
+}

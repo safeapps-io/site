@@ -1,0 +1,31 @@
+# Security
+
+Most of the companies take at least some security measures, like SSL encryption or password hashing. Most won't go deep into details. We'll try to tell you about everything we do to keep your data safe.
+
+A friendly reminder: all our code is available [on GitHub](https://github.com/safeapps-io), so you don't need to believe our words, you can check the source code for yourself. We'll add links where it is applicable.
+
+## Account access
+
+The first question that pops up: can anyone get access to my account?
+
+Usually, when someone tries to hack into your account, they do so using random passwords. We will not allow this. We limit the number of unsuccessful signings to your account [to 10 tries per day per account per IP](https://github.com/safeapps-io/money-back/blob/6687fba97e2bf311c93f29610b79f38e6f1b0259/src/controllers/auth/newUser.ts#L69) and [100 tries per day per account](https://github.com/safeapps-io/money-back/blob/6687fba97e2bf311c93f29610b79f38e6f1b0259/src/controllers/auth/newUser.ts#L78). It's more than enough for you to try to remember the right password, but for a hacker, it won't be enough to even warm up.
+
+If we were to be hacked, you should know that we also hash passwords, but we use the algorithm called [Argon2](https://en.wikipedia.org/wiki/Argon2), which was selected as the winner of the Password Hashing Competition in July 2015.
+
+Your account is safe with us.
+
+## Data encryption
+
+Our data encryption safety is is based on two great algorithms: [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) and [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+
+PBKDF2 is the algorithm that creates a secure <mark class='green'>master key</mark> from your <mark>master password</mark>. It is the same algorithm that password managers like 1Password, KeePass, and Bitwarden use. If you use a strong enough <mark>master password</mark>, it may take trillions of years to brute force your <mark class='green'>master key</mark>.
+
+It gets a little complicated from here:
+
+- when you're busy creating a wallet, your device generates a <mark class='red'>secret key</mark>. Under the hood, we use it to encrypt this wallet's data. This key never leaves the device in plaintext — hence "secret".
+- we then use your <mark class='green'>master key</mark> to encrypt the <mark class='red'>secret key</mark> into a thing we call a <mark class='blue'>chest</mark>, which we upload to the server. Only you will be able to get the <mark class='red'>secret key</mark> out of the <mark class='blue'>chest</mark> on, say, another device because nobody but you know the <mark>master password</mark>.
+- by the way, the said <mark class='red'>secret key</mark> is an AES with a key length of 256 bit. It is used by many governments in the world for transmitting top-secret information and [is practically impossible to crack](https://scrambox.com/article/brute-force-aes/).
+
+Most of the action goes on [in this file](https://github.com/safeapps-io/money-client/blob/master/src/services/crypto/keys.ts).
+
+So all and all your data is safe — even from us.
