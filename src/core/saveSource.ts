@@ -1,4 +1,5 @@
 import { getCookie, setCookie } from './cookie';
+import { rootDomain } from './config';
 
 type DataSaved = { [param: string]: string };
 const cookieName = 'source';
@@ -26,7 +27,7 @@ export const saveSource = () => {
 
   if (Object.keys(obj).length)
     setCookie(cookieName, JSON.stringify(obj), {
-      domain: process.env.ROOT_DOMAIN as string,
+      domain: rootDomain,
       expires: getExpires(),
     });
 };
