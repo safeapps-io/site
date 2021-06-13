@@ -24,8 +24,9 @@ export const saveSource = () => {
   // Merging old values with new values
   const obj: DataSaved = Object.assign(parsed, Object.fromEntries(entries));
 
-  setCookie(cookieName, JSON.stringify(obj), {
-    domain: process.env.ROOT_DOMAIN as string,
-    expires: getExpires(),
-  });
+  if (Object.keys(obj).length)
+    setCookie(cookieName, JSON.stringify(obj), {
+      domain: process.env.ROOT_DOMAIN as string,
+      expires: getExpires(),
+    });
 };
