@@ -1,5 +1,6 @@
 <script context="module">
   import { svgPath } from '$utils/blobs';
+
   import { generateRandomColor } from '$utils/color';
   import { randBetween } from '$utils/random';
 
