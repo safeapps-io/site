@@ -3,10 +3,10 @@
 
   const links = [
     [about, 'about'],
+    [security, 'security'],
     [forum, 'forum'],
     [terms, 'terms of service'],
     [privacy, 'privacy policy'],
-    [security, 'security'],
     [cookie, 'cookie policy'],
     ['https://github.com/safeapps-io', 'github'],
   ];

@@ -2,6 +2,12 @@
   import Footer from '$components/landing/Footer.svelte';
   import Header from '$components/landing/Header.svelte';
   import Meta from '$components/Meta.svelte';
+
+  import { onMount } from 'svelte';
+
+  import { saveSource } from '$core/saveSource';
+
+  onMount(saveSource);
 </script>
 
 <Meta

@@ -1,3 +1,7 @@
+const { config } = require('dotenv-flow');
+
+config(process.env.STAGE ? { node_env: 'stage' } : undefined);
+
 const sveltePreprocess = require('svelte-preprocess'),
   { mdsvex } = require('mdsvex'),
   path = require('path'),
@@ -8,6 +12,9 @@ module.exports = {
   kit: {
     adapter: static(),
     vite: () => ({
+      define: {
+        'process.env.ROOT_DOMAIN': JSON.stringify(process.env.ROOT_DOMAIN),
+      },
       resolve: {
         alias: {
           $components: path.resolve('src/components'),
