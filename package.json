@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "svelte-kit dev --p 3001",
     "type": "tsc --noEmit && svelte-check",
-    "build": "rm -rf ./build && find . -name .DS_Store | xargs rm && NODE_ENV=production svelte-kit build"
+    "build:common": "rm -rf ./build && find . -name .DS_Store | xargs rm",
+    "build:stage": "yarn build:common && STAGE=yep svelte-kit build",
+    "build:prod": "yarn build:common && svelte-kit build"
   },
   "dependencies": {
+    "blobs": "2.2.1-beta.0",
     "bulma": "^0.9.1"
   },
   "devDependencies": {
