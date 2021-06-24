@@ -1,4 +1,8 @@
-<a href="https://money.safeapps.io/" class="button is-large">Start for free</a>
+<script>
+  import { appPath } from '$core/config';
+</script>
+
+<a href="https://{appPath}" class="button is-large">Start for free</a>
 
 <style lang="scss">
   .button {
