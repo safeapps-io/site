@@ -1,16 +1,16 @@
-const { config } = require('dotenv-flow');
+import { config } from 'dotenv-flow';
 
 config(process.env.STAGE ? { node_env: 'stage' } : undefined);
 
-const sveltePreprocess = require('svelte-preprocess'),
-  { mdsvex } = require('mdsvex'),
-  path = require('path'),
-  static = require('@sveltejs/adapter-static');
+import sveltePreprocess from 'svelte-preprocess';
+import path from 'path';
+import adapter from '@sveltejs/adapter-static';
+import { mdsvex } from 'mdsvex';
 
 const extensions = ['.svelte', '.svx'];
-module.exports = {
+export default {
   kit: {
-    adapter: static(),
+    adapter: adapter(),
     vite: () => ({
       define: {
         'process.env.ROOT_DOMAIN': JSON.stringify(process.env.ROOT_DOMAIN),

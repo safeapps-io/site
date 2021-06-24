@@ -1,13 +1,13 @@
 <script>
   import Logo from '$components/Logo.svelte';
 
-  import { rootDomain } from '$core/config';
+  import { appPath } from '$core/config';
 </script>
 
 <nav>
   <div class="empty" />
   <a href="/"><Logo /></a>
-  <a class="app-link" href="https://money.{rootDomain}/" rel="external"
+  <a class="app-link" href="https://{appPath}/" rel="external"
     ><span>Go to app</span><span class="icon"
       ><svg
         viewBox="0 0 11 11"

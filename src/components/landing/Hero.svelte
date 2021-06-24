@@ -29,7 +29,6 @@
 
     <div class="cta" style="--multiplier: 4">
       <Cta />
-      <p>$59.99 a year. 30-day moneyback guarantee.</p>
     </div>
   </div>
 
@@ -139,10 +138,6 @@
 
   .cta {
     margin-top: 2em;
-
-    p {
-      font-size: 80%;
-    }
   }
 
   :global(.video) {
