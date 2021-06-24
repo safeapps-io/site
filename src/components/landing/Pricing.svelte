@@ -3,8 +3,21 @@
 </script>
 
 <div class="wrapper">
-  <p class="price">$<span class="numbers">59.99</span><span class="duration">/year</span></p>
-  <p class="trial">30-day money back guarantee</p>
+  <div class="price-wrapper">
+    <div class="free">
+      <div>
+        <span class="numbers">150 entities</span><br />
+        for free
+      </div>
+    </div>
+    <div class="delim">→</div>
+    <div class="then">
+      <div>
+        <p class="price">$<span class="numbers">59.99</span><span class="duration">/year</span></p>
+        <p class="moneyback">30-day money back guarantee</p>
+      </div>
+    </div>
+  </div>
 
   <div class="cta">
     <Cta />
@@ -48,28 +61,62 @@
     }
   }
 
+  .price-wrapper {
+    @include mq($from: tablet) {
+      display: flex;
+      place-content: center;
+      place-items: center;
+
+      .free,
+      .then {
+        flex: 1;
+
+        display: flex;
+      }
+    }
+
+    text-align: center;
+
+    .free {
+      justify-content: flex-end;
+
+      .numbers {
+        font-size: 1.5em;
+      }
+    }
+
+    .delim {
+      flex: none;
+      margin: 0 1em;
+      font-size: 2em;
+
+      @include mq($until: tablet) {
+        transform: rotate(90deg);
+      }
+    }
+
+    .then .price {
+      font-size: 3rem;
+
+      .duration {
+        font-size: 1.2rem;
+      }
+
+      .moneyback {
+        text-align: center;
+        font-size: 90%;
+      }
+    }
+  }
+
   p {
     margin: 0 auto;
   }
 
-  .price {
+  span.numbers {
     font-weight: bold;
-    text-align: center;
-    font-size: 4rem;
-
-    .numbers {
-      text-emphasis-position: under left;
-      text-emphasis: filled var(--color8-inverted);
-    }
-
-    .duration {
-      font-size: 1.5rem;
-    }
-  }
-
-  .trial {
-    text-align: center;
-    font-size: 90%;
+    text-emphasis-position: under left;
+    text-emphasis: filled var(--color8-inverted);
   }
 
   .cta {

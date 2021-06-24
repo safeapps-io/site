@@ -118,6 +118,7 @@ public/bundle.*
 /__sapper__/
 build/
 .svelte/
+.svelte-kit/
 
 # dotenv environment variables file
 .env.*
