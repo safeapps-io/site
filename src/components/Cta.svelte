@@ -1,4 +1,4 @@
-<a href="https://money.safeapps.io/" class="button is-large">Start right now</a>
+<a href="https://money.safeapps.io/" class="button is-large">Start for free</a>
 
 <style lang="scss">
   .button {
