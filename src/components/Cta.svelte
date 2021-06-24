@@ -2,7 +2,7 @@
   import { appPath } from '$core/config';
 </script>
 
-<a href="https://{appPath}" class="button is-large">Start for free</a>
+<a href="https://{appPath}" class="button is-large" rel="external">Start for free</a>
 
 <style lang="scss">
   .button {
