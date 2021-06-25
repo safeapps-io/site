@@ -21,7 +21,7 @@
       <span class="back">Save more <span class="mark">money</span></span>
     </p>
     <p style="--multiplier: 1">
-      <span class="back">Plan for <span class="mark">future</span></span>
+      <span class="back">Plan for the <span class="mark">future</span></span>
     </p>
     <p style="--multiplier: 2">
       <span class="back">Preserve your <span class="mark">privacy</span></span>
@@ -29,6 +29,7 @@
 
     <div class="cta" style="--multiplier: 4">
       <Cta />
+      <p class="help">No credit card required.</p>
     </div>
   </div>
 
@@ -138,6 +139,16 @@
 
   .cta {
     margin-top: 2em;
+
+    .help {
+      $shadow-size: 2px;
+      $shadow-color: rgba(255, 255, 255, 0.7);
+      $shadow: drop-shadow($shadow-size $shadow-size $shadow-size $shadow-color)
+        drop-shadow($shadow-size * -1 $shadow-size * -1 $shadow-size $shadow-color);
+
+      font-size: 80%;
+      filter: $shadow $shadow;
+    }
   }
 
   :global(.video) {
