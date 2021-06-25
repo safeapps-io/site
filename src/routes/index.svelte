@@ -39,7 +39,7 @@
   <Hero />
 </div>
 
-<h2>What do we have</h2>
+<h2>What we offer</h2>
 <Features />
 
 <div class="small-feat">

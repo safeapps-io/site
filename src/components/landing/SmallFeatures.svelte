@@ -2,7 +2,7 @@
   const smallFeatures = [
     '∞ transactions and categories',
     '∞ wallets',
-    '∞ wallet participants',
+    '∞ wallet users',
     'all the platforms: iOS, Android, Mac, Windows, Web',
   ];
 </script>

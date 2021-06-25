@@ -1,13 +1,21 @@
 <script>
   import Cta from '$components/Cta.svelte';
+  import Tooltip from '$components/Tooltip.svelte';
 </script>
 
 <div class="wrapper">
   <div class="price-wrapper">
     <div class="free">
       <div>
-        <span class="numbers">150 entities</span><br />
-        for free
+        <Tooltip>
+          <svelte:fragment slot="trigger">
+            <span class="numbers">150 entities</span><br />
+            for free
+          </svelte:fragment>
+
+          Since we encrypt every bit of data on the client side, we cannot differentiate
+          transactions from categories. So entity is anything you create within the product.
+        </Tooltip>
       </div>
     </div>
     <div class="delim">→</div>
@@ -95,16 +103,17 @@
       }
     }
 
-    .then .price {
-      font-size: 3rem;
+    .then {
+      .price {
+        font-size: 3rem;
 
-      .duration {
-        font-size: 1.2rem;
+        .duration {
+          font-size: 1.2rem;
+        }
       }
 
       .moneyback {
-        text-align: center;
-        font-size: 90%;
+        font-size: 80%;
       }
     }
   }
