@@ -18,13 +18,20 @@
 
   <div class="text fake-transform">
     <p style="--multiplier: 0">
-      <span class="back">Save more <span class="mark">money</span></span>
+      <span class="back">End-to-end <span class="mark">encrypted</span></span>
     </p>
     <p style="--multiplier: 1">
-      <span class="back">Plan for the <span class="mark">future</span></span>
+      <span class="back">Completely <span class="mark">open-sourced</span></span>
     </p>
     <p style="--multiplier: 2">
-      <span class="back">Preserve your <span class="mark">privacy</span></span>
+      <span class="back mark">All familiar features</span>
+    </p>
+    <p style="--multiplier: 3; --size: 1rem;">
+      <span class="back">Import from banks 🏦</span><br />
+      <span class="back">Shared accounts 👨‍👩‍👧</span><br />
+      <span class="back">Phones support 📱</span><br />
+      <span class="back">Balance calculation 📈</span><br />
+      <span class="back">Planning and budgeting 🔮</span><br />
     </p>
 
     <div class="cta" style="--multiplier: 4">
@@ -68,8 +75,10 @@
   .wrapper {
     position: relative;
 
-    display: flex;
-    place-items: center;
+    @include mq($from: tablet) {
+      display: flex;
+      place-items: center;
+    }
   }
 
   figure {
@@ -113,12 +122,12 @@
     }
 
     > p {
-      font-size: 1.4rem;
+      font-size: var(--size, 1.4rem);
       padding-bottom: 2px;
       margin-bottom: 2px;
 
       .back {
-        box-shadow: 0px 0px 0px 10px hsl(0, 0%, 98%);
+        box-shadow: 0px 0px 0px calc(var(--size, 1.4rem) / 2) hsl(0, 0%, 98%);
         background: hsl(0, 0%, 98%);
       }
     }
@@ -153,9 +162,8 @@
 
   :global(.video) {
     @include mq($until: tablet) {
-      display: none;
+      margin-top: 2em;
     }
-
     flex: 4;
 
     &:hover svg {

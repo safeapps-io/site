@@ -34,8 +34,8 @@
     top: 100%;
 
     @include mq($until: tablet) {
-      left: -1em;
-      right: -1em;
+      left: 1em;
+      right: 1em;
     }
 
     @include mq($from: tablet) {
