@@ -31,8 +31,8 @@
 </script>
 
 <h1 class="fake-transform">
-  World's first
-  <span class="secure">100%&nbsp;secure</span> finance tracker
+  <span class="secure">Privacy-first</span>
+  money tracker
 </h1>
 
 <div class="hero" use:cssVars={colors}>
@@ -56,14 +56,17 @@
     font-weight: bold;
     text-align: center;
 
-    margin: 2em 0 3em;
+    margin-bottom: 3em;
     @include mq($until: tablet) {
-      margin: 1em 0 2em;
+      margin-bottom: 2em;
     }
   }
 
   h1 {
     font-size: 3rem;
+    @include mq($until: tablet) {
+      font-size: 2rem;
+    }
 
     // Otherwise gradient backs overlay it
     z-index: 2;
@@ -71,13 +74,17 @@
     filter: drop-shadow(0 0 2px white);
 
     .secure {
-      text-emphasis-position: under left;
-      text-emphasis: '🔥';
+      background: -webkit-linear-gradient(35deg, red, blue);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
   h2 {
     font-size: 2.5rem;
+    @include mq($until: tablet) {
+      font-size: 1.5rem;
+    }
   }
 
   .hero {
