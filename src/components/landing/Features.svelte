@@ -12,7 +12,7 @@
   <Feature>
     <svelte:fragment slot="title">Smart import</svelte:fragment>
     <svelte:fragment slot="decription"
-      >Upload any OFX/CSV file from any bank in the world. Leave the rest to us.<br />
+      >Parse any OFX/CSV file from any bank in the world — completely on the client-side.<br />
       Save up to 5 hours a month.</svelte:fragment>
   </Feature>
   <Feature>
